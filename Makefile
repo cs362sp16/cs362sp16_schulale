@@ -15,6 +15,7 @@ runAdventurer: adventurer
 	cat dominion.c.gcov >> randomtestadventurer.out
 
 randomcard:
+<<<<<<< HEAD
 	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestcard.c rngs.c -o randomtestcard -lm -g
 
 runRandomCard: randomcard
@@ -22,6 +23,22 @@ runRandomCard: randomcard
 	gcov dominion.c >> randomtestcard.out
 	cat dominion.c.gcov >> randomcard.out
 
+=======
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestcard1.c rngs.c -o randomtestcard1 -lm -g
+
+randomcard2:
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestcard2.c rngs.c -o randomtestcard2 -lm -g
+
+runRandomCard: randomcard
+	./randomtestcard1 &> randomtestcard1.out
+	gcov dominion.c >> randomtestcard1.out
+	cat dominion.c.gcov >> randomcard.out
+
+runRandomCard2: randomcard2
+	./randomtestcard2 &> randomtestcard2.out
+	gcov dominion.c >> randomtestcard2.out
+	cat dominion.c.gcov >> randomcard2.out
+>>>>>>> 396f9d41a433172c34b16ad00e392780d271054e
 
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
@@ -80,7 +97,11 @@ unittestresults.out: unit1 unit2 unit3 unit4 card1 card2 card3 card4
 interface.o: interface.h interface.c
 	gcc -c interface.c -g  $(CFLAGS)
 
+<<<<<<< HEAD
 runtests: testDrawCard 
+=======
+runtests: testDrawCard
+>>>>>>> 396f9d41a433172c34b16ad00e392780d271054e
 	./testDrawCard &> unittestresult.out
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out

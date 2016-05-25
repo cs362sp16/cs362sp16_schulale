@@ -1,0 +1,8 @@
+I achieved 100% statement and branch coverage for the adventure card, which did not take long at all (less than 1 minute).
+I was also able to get 100% coverage for council room in a short amount of time due to lack of branches.
+
+
+I believe random tests are better than the unit tests in regard to finding obscure bugs that I would
+not be able to think of, but does take more time as a result.
+Unit tests are efficient at finding specific issues that are more likely to occur than those found with automated testing.
+Unit tests are also easier to write and will less likely lead to as many false positives.

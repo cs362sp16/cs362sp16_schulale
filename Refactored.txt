@@ -1,0 +1,6 @@
+Refactored card list:
+Adventurer
+Council Room
+Feasts
+Remodel
+Smithy

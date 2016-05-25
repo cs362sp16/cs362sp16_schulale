@@ -42,5 +42,9 @@ GCOV -- Lines executed: 0.00% of 20
 
 COVERAGE EXPLANATION
 
+<<<<<<< HEAD
 GCOV returned a generally pretty high covereage of lines used for each unit test, all but two of these tests were above 85% coverage. This leads me to believe I either wrote quality unit tests of I didn't test enough at a time since such a high number of the lines were executed, perhaps meaning there weren't enough nested conditionals throughout the unit tests. When GCOV was ran on the original dominion code it returned that 29.69% of 713 lines were executed, meaning the current dominion source code is not very thoroughly tested. The unittestresult.out file only shows two tests as failed because the other 6 have passed, but it does correclt show the same stats I achieved here. 
 
+=======
+GCOV returned a generally pretty high covereage of lines used for each unit test, all but two of these tests were above 85% coverage. This leads me to believe I either wrote quality unit tests of I didn't test enough at a time since such a high number of the lines were executed, perhaps meaning there weren't enough nested conditionals throughout the unit tests. When GCOV was ran on the original dominion code it returned that 29.69% of 713 lines were executed, meaning the current dominion source code is not very thoroughly tested. The unittestresult.out file only shows two tests as failed because the other 6 have passed, but it does correctly show the same stats I achieved here. 
+>>>>>>> 396f9d41a433172c34b16ad00e392780d271054e
