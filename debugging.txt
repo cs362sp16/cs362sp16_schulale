@@ -1,0 +1,20 @@
+Alex Schultz
+debugging.txt
+CS362, Spring 2016
+6 June 2016
+
+In Software Engineering I we used Test Driven Development, a process
+of only writing code until it fails, writing enough code so it produces
+the correct result, and then refactoring. Those three steps were ingrained,
+so that's how I started testing and debugging for Dominion. As the term
+progressed and I learned of Agans' Debugging Rules, I found it very helpful
+and supplemental to TDD. The first rule, understanding the system, was the
+first part of my debugging process. I couldn't debug something I didn't
+understand, so I first had to ensure that I understood each card's functionality.
+His second rule, make it fail, is essentially the first step in TDD, so I definitely
+used that along with Agans' fifth rule: change one thing at a time.
+One bug I found in my code was that the Adventurer card was not correctly
+discarding the non-treasure cards. This was fixed in line 797 by changing the second
+while loop parameters from "z-1>=1" to "z-1>=0."
+I definitely used Agans' first rule, accidentally used Agans' second rule by making
+it fail, and also used his fifth rule to change one thing at a time.

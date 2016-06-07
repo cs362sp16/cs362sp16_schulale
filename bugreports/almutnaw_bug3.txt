@@ -1,0 +1,16 @@
+Alex Schultz
+Bug #3
+CS362, Spring 2016
+6 June 2016
+
+The bug I found lies within the implementation of the adventurer card.
+When an adventurer card is drawn in a fully functional version of Dominion, it will
+reveal cards from the deck until 2 Treasure cards are found. Then the Treasure
+cards will be placed into the user's hand and the other cards that were revealed
+will be discarded. However, I discovered a bug that quits as soon as one Treasure
+card is drawn rather than two. The issue appears to lie within the while loop and
+can be fixed by replacing "1" with "2."
+
+The priority of this bug is high because the game will product inaccurate results,
+(the user will not receive as much Treasure), and the severity is medium because
+the game may still be played.

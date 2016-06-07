@@ -1,0 +1,14 @@
+Alex Schultz
+Bug #2
+CS362, Spring 2016
+6 June 2016
+
+The bug I found lies within the implementation of the minion card.
+When a minion card is drawn in a fully functional version of Dominion, it allows
+the option to receive 2 gold or to draw 4 cards. Additionally, each other player
+with at least 5 cards in hand discards the hand and draws 4 cards.
+However, I discovered a bug that does not give the player 2 gold when that
+option is selected.
+
+The priority of this bug is high because the game will product inaccurate results,
+and the severity is medium because the game may still be played.

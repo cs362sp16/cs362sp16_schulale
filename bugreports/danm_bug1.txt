@@ -1,0 +1,12 @@
+Alex Schultz
+Bug #1
+CS362, Spring 2016
+6 June 2016
+
+The bug I found lies within the implementation of the card: smithyCardEffect
+When a smithy card is drawn in a fully functional version of Dominion, it allows
+three cards to be drawn. However, I discovered a bug that does not allow three
+cards to be drawn, and the issue is appears to be within the for loop.
+
+The priority of this bug is high because the game will product inaccurate results,
+and the severity is medium because the game may still be played.

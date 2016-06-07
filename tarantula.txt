@@ -1,0 +1,11 @@
+Alex Schultz
+tarantula.txt
+CS362, Spring 2016
+6 June 2016
+
+The file tarantula.py is my implementation of Tarantula for dominion.c.
+It runs a test suite consisting of each unit test, using gcov on dominion.c and
+recording information used to compute the suspiciousness of each coverage unit.
+I used gcov to help identify the bug described in debugging.txt, and then I used
+tarantula. I found Tarantula to be much more intuitive than gcov and especially
+helpful with regard to setting breakpoints.
